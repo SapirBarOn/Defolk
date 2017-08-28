@@ -1,0 +1,25 @@
+<!-- <img src ="assets/images/loveIconAlbums.png">
+<h1> Favorite </h1> -->
+<div class="clear">
+<!-- <input type="text" class="input" name="" placeholder="Search"/>
+ -->
+<div id="album">
+    <app-album-item 
+    *ngFor="let item of albums"
+    [album]="item"
+    (albumSelected)="onAlbumClick(item)">
+    </app-album-item>
+    <!-- <section>
+        <img src='{{a.albumImg}}'>
+    </section>
+    <section>
+            <h4>{{a.albumName}}</h4>
+            <img src='{{a.djImg}}'>
+            <h3>{{a.djName}}</h3>
+            <h3>{{a.followers}}</h3>
+        <div>
+            <img src='../assets/images/moreInformationButton.png'>
+            <img src='../assets/images/playButton1.png'>
+        </div>
+    </section> -->
+</div>
